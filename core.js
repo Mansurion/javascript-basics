@@ -1,14 +1,5 @@
-"use strict";
+let a = 2;
 
-
-let message;
-message = 'Hello!';
-alert(message);
-
-let admin, name;
-name = "Mans";
-admin = name;
-alerty(admin);
-
-const BIRTHDAY = '18.04.1982';
-const age = someCode(BIRTHDAY);
+let x = 1 + (a *= 2);
+alert(a);
+alert(x);
