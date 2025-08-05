@@ -1,8 +1,5 @@
-let a = 1, b = 1;
+let a = 2;
 
-let c = ++a;
-let d = b++;
+let x = 1 + (a *= 2);
 alert(a);
-alert(b);
-alert(c);
-alert(d);
+alert(x);
