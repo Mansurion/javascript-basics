@@ -1,14 +1,7 @@
-"use strict";
-
-
-let message;
-message = 'Hello!';
-alert(message);
-
-let admin, name;
-name = "Mans";
-admin = name;
-alerty(admin);
-
-const BIRTHDAY = '18.04.1982';
-const age = someCode(BIRTHDAY);
+alert( 5 > 4 );
+alert( "ананас" > "яблоко" );
+alert( "2" > "12" );
+alert( undefined == null );
+alert( undefined === null );
+alert( null == "\n0\n" );
+alert( null === +"\n0\n" );
