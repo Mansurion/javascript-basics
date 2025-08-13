@@ -1,14 +1,19 @@
-"use strict";
+let login = prompt('введите логин');
 
+if (login === 'mans') {
 
-let message;
-message = 'Hello!';
-alert(message);
+  let password = prompt('введите пароль');
 
-let admin, name;
-name = "Mans";
-admin = name;
-alerty(admin);
+  if (password === 'qwerty') {
+    alert('вы вошли!');
+  } else if (password === '' || password === null) {
+    alert('Отменено');
+  } else {
+    alert( 'Неверный пароль' );
+  }
 
-const BIRTHDAY = '18.04.1982';
-const age = someCode(BIRTHDAY);
+} else if (login === '' || login === null) {
+  alert('Отменено');
+} else {
+  alert('неверный логин');
+}
