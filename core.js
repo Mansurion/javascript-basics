@@ -1,14 +1,11 @@
-"use strict";
+let number = prompt('Введите число от одного до трех')
 
-
-let message;
-message = 'Hello!';
-alert(message);
-
-let admin, name;
-name = "Mans";
-admin = name;
-alerty(admin);
-
-const BIRTHDAY = '18.04.1982';
-const age = someCode(BIRTHDAY);
+if (number > 0) {
+  alert('1');
+}
+else if (number < 0) {
+  alert('-1')
+}
+else {
+  alert('0')
+}
