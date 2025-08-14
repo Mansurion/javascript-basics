@@ -1,19 +1,9 @@
-let login = prompt('введите логин');
+let company = prompt('Какое «официальное» название JavaScript?')
 
-if (login === 'mans') {
+if (company == 'Netscape') {
+  alert('Верно')
+}
 
-  let password = prompt('введите пароль');
-
-  if (password === 'qwerty') {
-    alert('вы вошли!');
-  } else if (password === '' || password === null) {
-    alert('Отменено');
-  } else {
-    alert( 'Неверный пароль' );
-  }
-
-} else if (login === '' || login === null) {
-  alert('Отменено');
-} else {
-  alert('неверный логин');
+else {
+  alert('Неправильно')
 }
