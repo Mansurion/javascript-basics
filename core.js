@@ -1,14 +1,23 @@
-"use strict";
+const login = prompt('Введите логин');
+const password = prompt('Введите пароль');
 
+const users = [
+  {name: 'Mansur', login: 'mans', password: '1122'},
+  {name: 'Madina', login: 'madi', password: '3344'}
+]
 
-let message;
-message = 'Hello!';
-alert(message);
+let userName = 0
 
-let admin, name;
-name = "Mans";
-admin = name;
-alerty(admin);
+for (let i = 0; i < users.length; i++) {
+  const user = users[i];
+  if (login === user.login && password === user.password) {
+      userName = user.name;
+      break;
+  }
+}
 
-const BIRTHDAY = '18.04.1982';
-const age = someCode(BIRTHDAY);
+if (userName) {
+    alert("Вы вошли, " + userName)
+} else {
+    alert("Неправильный логин или пароль")
+}
