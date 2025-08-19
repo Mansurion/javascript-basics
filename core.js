@@ -1,23 +1,17 @@
-const login = prompt('Введите логин');
-const password = prompt('Введите пароль');
+/*let num1 = 10,
+    num2 = 20,
+    result;
 
-const users = [
-  {name: 'Mansur', login: 'mans', password: '1122'},
-  {name: 'Madina', login: 'madi', password: '3344'}
-]
-
-let userName = 0
-
-for (let i = 0; i < users.length; i++) {
-  const user = users[i];
-  if (login === user.login && password === user.password) {
-      userName = user.name;
-      break;
+if (result === null || result === undefined) {
+  if (num1 !== null && num1 !== undefined) {
+    result = num1;
+  } else {
+    result = num2;
   }
-}
+}*/
 
-if (userName) {
-    alert("Вы вошли, " + userName)
-} else {
-    alert("Неправильный логин или пароль")
-}
+let num1 = 10,
+    num2 = 20,
+    result;
+
+result ??= num1 ?? num2;
