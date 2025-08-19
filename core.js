@@ -11,8 +11,7 @@ let userName = 0
 for (let i = 0; i < users.length; i++) {
   const user = users[i];
   if (login === user.login && password === user.password) {
-      userName = user.name;
-      break;
+      userName = user.name
   }
 }
 
